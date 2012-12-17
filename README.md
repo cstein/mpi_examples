@@ -1,4 +1,4 @@
 mpi_examples
 ============
 
-Examples of MPI
+Examples of using MPI with python and fortran.
