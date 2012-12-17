@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+if [ "$#" != "2" ]
+then
+  echo "usage: mpi4py script.py ncpus"
+  exit
+fi
+SCRIPT=$1
+NCPUS=$2
+
+
+MPI=mpirun
+export PATH=/opt/openmpi-1.5_intel/bin:$PATH
+export LD_LIBRARY_PATH=/opt/openmpi-1.5_intel/lib:$LD_LIBRARY_PATH
+
+$MPI -n $NCPUS python $SCRIPT
