@@ -9,7 +9,7 @@ SCRIPT=$1
 NCPUS=$2
 
 
-MPI=mpirun
+MPI=mpiexec
 export PATH=/opt/openmpi-1.5_intel/bin:$PATH
 export LD_LIBRARY_PATH=/opt/openmpi-1.5_intel/lib:$LD_LIBRARY_PATH
 
